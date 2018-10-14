@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>database</folder>
+	<filename>75.JPG</filename>
+	<path>D:\database\75.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>462</width>
+		<height>233</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>357</xmin>
+			<ymin>117</ymin>
+			<xmax>380</xmax>
+			<ymax>137</ymax>
+		</bndbox>
+	</object>
+</annotation>

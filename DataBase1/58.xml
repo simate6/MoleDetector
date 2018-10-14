@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>kepekadatbazis</folder>
+	<filename>58.jpg</filename>
+	<path>E:\mentes\bme\MSC\3\Deeplearning\nagyhazi\kepekadatbazis\58.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>660</width>
+		<height>469</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>424</xmin>
+			<ymin>294</ymin>
+			<xmax>441</xmax>
+			<ymax>310</ymax>
+		</bndbox>
+	</object>
+</annotation>
