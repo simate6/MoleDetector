@@ -23,3 +23,9 @@ The current neural networks are developed to diagnose melanoma based on dermatos
 * Hyperparameter tuning
 
 Regarding the <i>I. milestone</i> our task is invloving data acquisiton, labeling, preprocessing standardization and in general to make an organized dataset which will be later applicable for training purposes.
+
+<h2 align="center">II. milestone</h2>
+
+Tha main purpose of mileston II. was to being to train the DNN. We managed to solve the task and the results can be seen in the relevant notebooks as follows:
+* MoleDetector_wMLP.ipynb / MoleDetector_wMLP_mate.ipynb: trained MLP
+* MoleDetector_wCNN.ipynb: trained CNN & algorithm for object localization
