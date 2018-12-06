@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="masilyn.png" width="380"/>
+    <img src="marilyn.png" width="380"\>
 </p>
 
 <h1 align="center">Deep learning a gyakorlatban Python és LUA alapon | VITMAV45</h1>
