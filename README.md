@@ -1,41 +1,58 @@
 <p align="center">
-    <img src="masilyn.png" width="380"\>
+    <img src="masilyn.png" width="380"/>
 </p>
 
-# MoleDetector
 <h1 align="center">Deep learning a gyakorlatban Python és LUA alapon | VITMAV45</h1>
 <h2 align="center">Nagy házi feladat</h2>
 
-Team: Molehub
+<b>Team:</b> Molehub
 
-Team members:
+<b>Team members:</b>
 * Küttel Dániel (QPPXW1) email: kutteljr@gmail.com
 * Siket Máté (N1C4Z9) email: siket.mate@gmail.com
 
+<b>Topic:</b> Mole detection with deep learning
 
-Topic: Mole detection with deep learning
+## Table of Contents
+* [I. Motivation](#i-motivation)
+* [II. Installation](#ii-installation)
+* [III. Notebooks](#iii-notebooks)
+    + [3.1 Creating database](#31-creating-database)
+    + [3.2 MoleDetector with MLP](#32-moledetector-with-mlp)
+    + [3.3 MoleDetector with CNN](#33-moledetector-with-cnn)
+    + [3.4 MoleDetector with CNN+MLP](#34-moledetector-with-cnnmlp)
 
-### 1.0 Installation guide
-
-
-### 1.1 Motivation
+## I. Motivation
 The current neural networks are developed to diagnose melanoma based on dermatoscopic images. On the other hand, during consultations we determined a different kind of approach. Our goal is to mark the moles on pictures which are taken from different distances at different angles, resolutions and lighting conditions. The "cutouts" could be later used for detailed investigation or mole appareance follow-up.
 
-### 1.2 Main tasks during the semester
-* Data acquistion & preprocess
-* Train
-* Data augmentation
-* Hyperparameter tuning
+## II. Installation
+    git clone https://github.com/simate6/MoleDetector.git
+    pip install -r requirements.txt
 
-<h2 align="center">I. milestone</h2>
+## III. Notebooks
+### 3.1 Creating database
+[DataBase1](DataBase1), [DataBase2](DataBase2) & [DataBaseBCKG](DataBaseBCKG) are containing the images that we're using for cropping ROIs.
+The [create_dataset.ipynb](create_dataset.ipynb) notebook will do the work and [Cropped](Cropped) & [CroppedBCKG](CroppedBCKG) are the folders with the resulted images.
 
-Regarding the <i>I. milestone</i> our task is invloving data acquisiton, labeling, preprocessing standardization and in general to make an organized dataset which will be later applicable for training purposes.
+### 3.2 MoleDetector with MLP
+Implementation of _Multilayer perceptron_ with gray scale images:
 
-<h2 align="center">II. milestone</h2>
+* Notebook for training: [MoleDetector_MLP_Training.ipynb](MoleDetector_MLP_Training.ipynb)
+* Notebook for testing: [MoleDetector_MLP_Detection.ipynb](MoleDetector_MLP_Detection.ipynb)
 
-Tha main purpose of <i>mileston II.</i> was to being to train the DNN. We managed to solve the task and the results can be seen in the relevant notebooks as follows:
-* MoleDetector_wMLP.ipynb / MoleDetector_wMLP_mate.ipynb: trained MLP
-* MoleDetector_wCNN.ipynb: trained CNN & algorithm for object localization
+### 3.3 MoleDetector with CNN
+Implementation of _Convolutional Neural Network_ with RGB images:
 
-<h2 align="center">Final version</h2>
+* Notebook for training: [MoleDetector_CNN_Training.ipynb](MoleDetector_CNN_Training.ipynb)
+* Notebook for testing: [MoleDetector_CNN_Detection.ipynb](MoleDetector_CNN_Detection.ipynb)
 
+Implementation of _Convolutional Neural Network_ with normalised RGB images:
+
+* Notebook for training: [MoleDetector_CNNnormalised_Training.ipynb](MoleDetector_CNNnormalised_Training.ipynb)
+* Notebook for testing: [MoleDetector_CNNnormalised_Detection.ipynb](MoleDetector_CNNnormalised_Detection.ipynb)
+
+### 3.4 MoleDetector with CNN+MLP
+
+Here we're using a mixed model with the aim of getting better results:
+
+* Notebook: [MoleDetector_CNN+MLP_Detection.ipynb](MoleDetector_CNN+MLP_Detection.ipynb)
