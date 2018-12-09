@@ -32,7 +32,7 @@ The current neural networks are developed to diagnose melanoma based on dermatos
 ## III. Notebooks
 ### 3.1 Creating database
 [DataBase1](DataBase1), [DataBase2](DataBase2) & [DataBaseBCKG](DataBaseBCKG) are containing the images that we're using for cropping ROIs.
-The [create_dataset.ipynb](create_dataset.ipynb) notebook will do the work and [Cropped](Cropped) & [CroppedBCKG](CroppedBCKG) are the folders with the resulted images.
+The [create_dataset.ipynb](create_dataset.ipynb) notebook will do the work and [Cropped](Cropped) & [CroppedBCKG](CroppedBCKG) are the folders with the resulted images. Last but not least in [GAN_augmentation.ipynb](GAN_augmentation.ipynb) notebook we are investigating data augmentation with the help of generative adversial network (GAN). 
 
 ### 3.2 MoleDetector with MLP
 Implementation of _Multilayer perceptron_ with gray scale images:
